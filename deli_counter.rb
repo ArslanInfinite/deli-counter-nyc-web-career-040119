@@ -1,3 +1,5 @@
+require 'pry'
+
 katz_deli = []
 
 def line(numinline)
@@ -5,7 +7,7 @@ def line(numinline)
   if numinline.length == 0
     puts "The line is currently empty."
   else
-    line_array.each.with_index(0) do |name, index|
+    numinline.each.with_index(0) do |name, index|
       line_array.push("#{index}. #{name}")
     end
     puts "The line is: #{line_array.join(" ")}"
