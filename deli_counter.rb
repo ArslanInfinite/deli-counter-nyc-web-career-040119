@@ -1,14 +1,14 @@
 katz_deli = []
 
-def line_method(numinline)
-  line_method_array = []
+def line(numinline)
+  line_array = []
   if numinline.length == 0
     puts "The line is currently empty."
   else
-    line_method_array.each.with_index(0) do |name, index|
-      line_method_array.push("#{index}. #{name}")
+    line_array.each.with_index(0) do |name, index|
+      line_array.push("#{index}. #{name}")
     end
-    puts "The line is: #{line_method_array.join(" ")}"
+    puts "The line is: #{line_array.join(" ")}"
   end
 end
 
@@ -26,11 +26,11 @@ def now_serving(nextinline)
   end
 end
 
-line_method(katz_deli)
+line(katz_deli)
 take_a_number(katz_deli, "Ada")
 take_a_number(katz_deli, "Grace")
 take_a_number(katz_deli, "Kent")
-line_method(katz_deli)
+line(katz_deli)
 now_serving(katz_deli)
 
 take_a_number(katz_deli, "Matz")
